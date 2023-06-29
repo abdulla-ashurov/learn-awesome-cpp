@@ -32,6 +32,8 @@ public:
             std::getline(in, line);
             lines.push_back(line);
         }
+
+        in.close();
     }
     
     std::vector<size_t> query(const std::string &&word) const {
