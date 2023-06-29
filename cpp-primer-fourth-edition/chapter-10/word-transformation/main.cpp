@@ -25,12 +25,16 @@ int main(int argc, char** argv) {
     while (word_transformation_file >> key >> value)
         transform_words.insert(std::make_pair(key, value));
     
+    input_transform_file.close();
+    
     while (input_transform_file >> key) {
         if (transform_words.count(key))
             std::cout << transform_words[key] << " ";
         else
             std::cout << key << " ";
     }
+
+    input_transform_file.close();
 
     return 0;
 }
