@@ -27,6 +27,9 @@ public:
         if (!in.is_open())
             throw std::runtime_error(path + " not found!");
 
+        if (!lines.empty())
+            lines.clear();
+
         while (in) {
             std::string line;
             std::getline(in, line);
