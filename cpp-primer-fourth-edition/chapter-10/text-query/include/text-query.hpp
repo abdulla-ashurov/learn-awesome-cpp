@@ -30,11 +30,9 @@ public:
         if (!lines.empty())
             lines.clear();
 
-        while (in) {
-            std::string line;
-            std::getline(in, line);
+        std::string line;
+        while (std::getline(in, line))
             lines.push_back(line);
-        }
 
         in.close();
     }
