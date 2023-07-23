@@ -1,0 +1,4 @@
+{
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/cpp-primer-fourth-edition/chapter-10/build/compile_commands.json",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++"
+}
